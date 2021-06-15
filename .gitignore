@@ -63,4 +63,5 @@ typings/
 # Flex related ignore
 appConfig.js
 pluginsService.js
+package-lock.json
 build/

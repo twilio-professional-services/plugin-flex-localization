@@ -55,9 +55,9 @@ Make a copy the en-US.private.json file for every language to be used - samples 
 
 Have all of the new copies of the JSON file translated.
 
-In both the base project directory and in the directory named 'default,' copy the .env.sample file to .env, and edit both of them to add your Account SID and Auth Token.  
+In both the base project directory and in the directory named `default`, copy the .env.sample file to .env, and edit both of them to add your Account SID and Auth Token.  
 
-In the 'default' directory, deploy the Serverless Function and Assets.
+In the `default` directory, deploy the Serverless Function and Assets.
 
 ```bash
 twilio serverless:deploy --override-existing-project
@@ -79,5 +79,4 @@ Close all browsers with Flex running, and open a new browser window to start Fle
 
 For further reference see [Flex Localization and Templating](https://www.twilio.com/docs/flex/developer/ui/localization-and-templating)
 
-
-npm install twilo-flex-token-validator for dependencies in both plugin/parent and function/default/child directories!
+If necessary, run `npm install twilo-flex-token-validator` for dependencies in both base project directory and the `default` directory!
