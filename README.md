@@ -8,6 +8,14 @@ Twilio Flex Plugins allow you to customize the appearance and behavior of [Twili
 
 This plugin replaces all string prompts in the Flex UI with translations, localizing the UI to each logged-in user.  You must retrieve the base set of strings, make copies for every language to be used, and have the copies translated.
 
+This plugin also provides a Language Selection menu for the agents. Switching language reloads the appropriate language file and resets the Flex Manager Template Strings
+
+![French](images/frenchUI.png)
+
+![Spanish](images/spanishUI.png)
+
+
+
 ## Setup
 
 Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com). We support Node >= 10.12 (and recommend the _even_ versions of Node). Afterwards, install the dependencies by running `npm install`:
@@ -55,15 +63,22 @@ Make a copy the en-US.private.json file for every language to be used - samples 
 
 Have all of the new copies of the JSON file translated.
 
-In both the base project directory and in the directory named `default`, copy the .env.sample file to .env, and edit both of them to add your Account SID and Auth Token.  
+Alternatively, leverage the Excel worksheet provided to create language Json files. See worksheet for details and instructions.
 
 In the `default` directory, deploy the Serverless Function and Assets.
 
 ```bash
 twilio serverless:deploy --override-existing-project
 ```
+Note the Domain displayed in the command output. Copy this value.
 
-Note the Domain displayed in the command output.  Copy the URL, and edit the .env file in the base project directory.  Past the URL as the value for FLEX_APP_FUNCTIONS_BASE and save the file.
+In the base project directory copy the .env.sample file to .env, and add this value (from the previous step):
+
+FLEX_APP_FUNCTIONS_BASE=https://YOUR-DOMAIN.twil.io
+
+
+
+
 
 In the base project directory, deploy the Flex Plugin.
 

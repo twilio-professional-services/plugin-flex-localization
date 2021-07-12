@@ -1,5 +1,5 @@
 {
-  "name": "flex-localization",
+  "name": "plugin-flex-localization",
   "version": "0.0.14",
   "private": true,
   "scripts": {
