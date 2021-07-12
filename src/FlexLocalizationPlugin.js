@@ -1,8 +1,13 @@
 import React from 'react';
 import { VERSION } from '@twilio/flex-ui';
 import { FlexPlugin } from 'flex-plugin';
+import reducers, { namespace } from './states';
 
+import LanguageSelect from './components/LanguageSelect/LanguageSelect';
 const PLUGIN_NAME = 'FlexLocalizationPlugin';
+
+import { Actions as LanguageActions } from './states/LanguageState';
+import LanguageUtil from './utils/LanguageUtil';
 
 export default class FlexLocalizationPlugin extends FlexPlugin {
   constructor() {
@@ -16,8 +21,13 @@ export default class FlexLocalizationPlugin extends FlexPlugin {
    * @param flex { typeof import('@twilio/flex-ui') }
    * @param manager { import('@twilio/flex-ui').Manager }
    */
-  init(flex, manager) {
+  async init(flex, manager) {
     this.registerReducers(manager);
+
+    flex.MainHeader.Content.add(
+      <LanguageSelect key="select-language" />,
+      { sortOrder: -999, align: 'end' }
+    );
 
     // This approach works by determining the language the user would like (by Flex worker attributes,
     // or browser setting, in this sample).  Use the method best suited to your use case. REMOVE THE REST.
@@ -40,36 +50,12 @@ export default class FlexLocalizationPlugin extends FlexPlugin {
     // Or manager.workerClient.attributes data.  This is preferred, as it can be setup via SSO.
     myLanguage = manager.workerClient.attributes.language || myLanguage;
 
-    // Construct a URL.
-    const filePath = "/" + myLanguage + ".json";
-    const serviceBaseUrl = process.env.FLEX_APP_FUNCTIONS_BASE;
-
-    // Keep things synchronous to avoid race conditions
-
-    // This sample uses a Twilio serverless Service.
-    // Call a Function, which then retrieves the translation data.
-    try {
-      const serviceUrl = serviceBaseUrl + "/getStrings";
-
-      const request = new XMLHttpRequest();
-      request.open("POST", serviceUrl, false);
-      request.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=UTF-8");
-      const body = {
-        languageRequested: filePath,
-        Token: manager.store.getState().flex.session.ssoTokenPayload.token
-      };
-      request.send(new URLSearchParams(body));
-
-      if(request.status === 200) {
-        const data = JSON.parse(request.responseText);
-        manager.strings = { ...manager.strings, ...data};
-      } else {
-        console.warn("translation file not found, bad request status", request);
-      }
+    let data = await LanguageUtil.getLanguageStrings(myLanguage);
+    if (data) {
+      manager.strings = { ...manager.strings, ...data };
+      manager.store.dispatch(LanguageActions.setLanguage(myLanguage));
     }
-    catch(e) {
-      console.warn("translation file not found, exception", e);
-    }
+
 
   }
 
@@ -84,5 +70,6 @@ export default class FlexLocalizationPlugin extends FlexPlugin {
       console.error(`You need FlexUI > 1.9.0 to use built-in redux; you are currently on ${VERSION}`);
       return;
     }
+    manager.store.addReducer(namespace, reducers);
   }
 }
