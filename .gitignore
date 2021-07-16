@@ -66,3 +66,4 @@ pluginsService.js
 package-lock.json
 build/
 .twilio-functions
+.twiliodeployinfo
