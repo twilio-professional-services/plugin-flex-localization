@@ -118,8 +118,8 @@
   "TaskLineChatMessengerReserved": "Demande Messenger entrante",
   "TaskLineChatWhatsAppReserved": "Demande WhatsApp entrante",
   "TaskLineSmsReserved": "Demande SMS entrante",
-#N/A
-"TaskLineChatAssigned": "{{helper.durationSinceUpdate}} | {{#if helper.chat.typers.length}} saisie… {{else}} {{#if helper.chat.lastMessage}} {{helper.chat.lastMessage.authorName}}: {{helper.chat.lastMessage.body}} {{else}} Aucun message {{/if}} {{/if}}",
+  "TaskLineEmailReserved": "Demande d'e-mail entrant",
+  "TaskLineChatAssigned": "{{helper.durationSinceUpdate}} | {{#if helper.chat.typers.length}} saisie… {{else}} {{#if helper.chat.lastMessage}} {{helper.chat.lastMessage.authorName}}: {{helper.chat.lastMessage.body}} {{else}} Aucun message {{/if}} {{/if}}",
   "TaskLineWebChatAssigned": "{{#if helper.chat.isCustomerOnline}} {{{icon name='GreenIndicator'}}} {{else}} {{{icon name='GreyIndicator'}}} {{/if}} {{helper.durationSinceUpdate}} | {{#if helper.chat.typers.length}} saisie… {{else}} {{#if helper.chat.lastMessage}} {{helper.chat.lastMessage.authorName}}: {{helper.chat.lastMessage.body}} {{else}} Aucun message {{/if}} {{/if}}",
   "TaskReserved": "Réservé",
   "TaskAssigned": "Attribué",
