@@ -258,7 +258,7 @@
   "TeamsViewResultsSummaryFilterCTA": "filtre",
   "TeamFiltersPanelTitle": "Filtres",
   "TeamFiltersPanelSingularLabel": "Affichage de <strong>{{number}}</strong> agent",
-  "TeamFiltersPanelPluralLabel": "Affichage des <strong>{{number}}/strong> agents",
+  "TeamFiltersPanelPluralLabel": "Affichage des <strong>{{number}}</strong> agents",
   "TeamFiltersApply": "Filtrer",
   "TeamFiltersReset": "Réinitialiser",
   "OutboundCallFailedNotificationTitleDisabledCountry": "Les appels vers ce pays ne sont pas autorisés. Merci de contacter votre administrateur pour changer les permissions géographiques.",
