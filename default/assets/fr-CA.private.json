@@ -334,7 +334,7 @@
   "QueueAssignmentUndo": "Annuler",
   "QueueAgentsInQueue": "Agents dans {{queueName}}",
   "QueueHeaderTitle": "Gérer les agents",
-  "QueueSelectionBanner": "Sélectionner jusqu'à 50 agents. Vous en avez sélectionnné <b class='{{bold}}'>{{count}} {{selectedAgentText}}</b>. Pour confirmer, cliquer sur le bouton "Ajouter".",
+  "QueueSelectionBanner": "Sélectionner jusqu'à 50 agents. Vous en avez sélectionnné <b class='{{bold}}'>{{count}} {{selectedAgentText}}</b>. Pour confirmer, cliquer sur le bouton Ajouter.",
   "QueueDeselectAll": "Désélectionner",
   "QueueAssign": "Assigner",
   "QueueSuccessBanner": "<b class='{{bold}}'> {{assigned}} {{agentText}} assignés à cette file.</b> Pour annuler cette action et revoir les changements précédents, aller à",
