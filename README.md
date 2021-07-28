@@ -8,13 +8,20 @@ Twilio Flex Plugins allow you to customize the appearance and behavior of [Twili
 
 This plugin replaces all string prompts in the Flex UI with translations, localizing the UI to each logged-in user.  You must retrieve the base set of strings, make copies for every language to be used, and have the copies translated.
 
-This plugin also provides a Language Selection menu for the agents. Switching language reloads the appropriate language file and resets the Flex Manager Template Strings
+This plugin also provides a Language Selection menu for the agents. Switching language reloads the appropriate language file and updates all the Flex Manager Template Strings
 
 ![French](images/frenchUI.png)
 
 ![Spanish](images/spanishUI.png)
 
+Available Languages:
+* English
+* Spanish
+* French
+* German
+* Dutch
 
+The included assets contain the translated template strings for each Language. Each file contains the exact same set of String Identifiers since this is required for seamless Language switching.
 
 ## Setup
 
