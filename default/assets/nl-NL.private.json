@@ -100,7 +100,7 @@
   "SideNavSettings": "Instellingen",
   "SideNavQueuesStatsView": "Statistieken Wachtrijen",
   "TaskLineCallIncomingTitle": "Nieuw binnenkomend gesprek",
-  "TaskLineCallTransferTitle": "Overplaatsingsverzoek",
+  "TaskLineCallTransferTitle": "Transferverzoek",
   "TaskLineCallEndedTitle": "Gesprek beëindigd",
   "TaskLineQueue": "Wachtrij: {{task.queueName}}",
   "TaskLineCallReserved": "Binnenkomend gesprek van wachtrij {{task.queueName}}",
@@ -278,8 +278,8 @@
   "IncomingCallBrowserNotificationTitle": "Inkomend gesprek",
   "IncomingCallBrowserNotificationBody": "Van: {{task.defaultFrom}}",
   "IncomingCallNotificationTitle": "Inkomende oproep van {{task.defaultFrom}}",
-  "IncomingCallTransferNotificationTitle": "Overplaatsingsverzoek van {{task.defaultFrom}}",
-  "IncomingCallTransferBrowserNotificationTitle": "Overplaatsingsverzoek",
+  "IncomingCallTransferNotificationTitle": "",
+  "IncomingCallTransferBrowserNotificationTitle": "Transferverzoek",
   "IncomingCallTransferWorkerBrowserNotificationBody": "Van {{task.incomingTransferObject.worker.fullName}} (direct)",
   "IncomingCallTransferQueueBrowserNotificationBody": "Van {{task.incomingTransferObject.worker.fullName}} ({{task.incomingTransferObject.queue.name}})",
   "IncomingNotificationAccept": "Accepteren",
@@ -462,5 +462,5 @@
   "CopyClipboardFailed": "Kopiëren naar clipboard mislukt: {{error}}",
   "BackButton": "Terug",
   "NoTokenErrorNotificationBody": "Je sessie verloopt over 10 minuten. Vernieuw de pagina om je sessie te herstellen voordat deze verloopt. Neem contact op met je beheerder als dit opnieuw gebeurt.",
-  "NoTokenErrorNotificationAction": "Vernieuwen",
+  "NoTokenErrorNotificationAction": "Vernieuwen"
 }
