@@ -20,7 +20,11 @@ class LanguageSelect extends React.PureComponent {
         {
           'name': 'Spanish',
           'key': 'es-MX'
-        },     
+        },
+        {
+          'name': 'Portuguese',
+          'key': 'pt-BR'
+        }, 
         {
           'name': 'French',
           'key': 'fr-CA'
