@@ -245,7 +245,7 @@
   "ChatOrchestrationAddToChatChannelFailed": "Falha ao adicionar worker ao canal de bate-papo.",
   "ChatOrchestrationDeactivateChatChannelFailed": "Falha ao desativar o canal de bate-papo.",
   "ChatOrchestrationLeaveChatChannelFailed": "Falha ao remover o worker do canal de bate-papo.",
-  "TeamsViewFilterAction": "Filtro {{#if filterCount}} ({{filterCount}}) {{/if}}}",
+  "TeamsViewFilterAction": "Filtro {{#if filterCount}} ({{filterCount}}) {{/if}}",
   "TeamsViewClearSearchAction": "Limpar resultados de pesquisa",
   "TeamsViewClearSearchPlaceholder": "Pesquisar Agentes",
   "TeamsViewResultsSummaryErrorTitle": "Ocorreu algo inesperado",
