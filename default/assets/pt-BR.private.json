@@ -119,7 +119,7 @@
   "TaskLineChatWhatsAppReserved": "Pedido WhatsApp recebido",
   "TaskLineSmsReserved": "Pedido de SMS de entrada",
   "TaskLineEmailReserved": "Solicitação de e-mail de entrada",
-  "TaskLineChatAssigned": "{{helper.durationSinceUpdate}} | {{#if helper.chat.typers.length}} digitando... {{else}} {{#if helper.chat.lastMessage}} ' + '{{helper.chat.lastMessage.authorName}}: {{helper.chat.lastMessage.body}}' + '{{else}} Nenhuma mensagem {{/if}} {{/if}}",
+  "TaskLineChatAssigned": "{{helper.durationSinceUpdate}} | {{#if helper.chat.typers.length}} digitando... {{else}} {{#if helper.chat.lastMessage}} {{helper.chat.lastMessage.authorName}}: {{helper.chat.lastMessage.body}} {{else}} Nenhuma mensagem {{/if}} {{/if}}",
   "TaskLineWebChatAssigned": "{{#if helper.chat.isCustomerOnline}} {{{icon name='GreenIndicator'}}} {{else}} {{{icon name='GreyIndicator'}}} {{/if}}{{helper.durationSinceUpdate}} | {{#if helper.chat.typers.length}} escrevendo …{{else}} {{#if helper.chat.lastMessage}} {{helper.chat.lastMessage.authorName}}: {{#if helper.chat.lastMessage.source.body}}{{helper.chat.lastMessage.source.body}}{{else}}{{#if helper.chat.lastMessage.error}}<span class='error'>O envio falhou</span>{{else}}File sent{{/if}}{{/if}}{{else}}No messages{{/if}}{{/if}}",
   "TaskReserved": "Reservado",
   "TaskAssigned": "Atribuído",
