@@ -12,7 +12,7 @@ This plugin also provides a Language Selection menu for the agents. Switching la
 
 ![French](images/frenchUI.png)
 
-![Spanish](images/spanishUI.png)
+![Spanish](images/agentSpanish.png)
 
 Available Languages:
 * English
@@ -21,6 +21,7 @@ Available Languages:
 * French
 * German
 * Dutch
+* Czech
 
 The included assets contain the translated template strings for each Language. Each file contains the exact same set of String Identifiers since this is required for seamless Language switching.
 
