@@ -460,7 +460,7 @@
   "SecondIncomingVoiceConnectionNotificationAccept": "Annehmen",
   "SecondIncomingVoiceConnectionNotificationReject": "Ablehnen",
   "CopyClipboardFailed": "Kopieren zur Ablage fehlgeschalgen: {{error}}",
-  "BackButton": "Zrück",
+  "BackButton": "Zurück",
   "NoTokenErrorNotificationBody": "Ihre Sitzung wird in 10 Minuten ablaufen. Bitte aktualisieren Sie die Seite um die Sitzung zurück zu setzen bevor sie ausläuft. Bitte kontaktieren Sie Ihren Administrator falls das Problem wieder auftreten sollte.",
   "NoTokenErrorNotificationAction": "Aktualisieren"
 }
