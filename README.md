@@ -17,7 +17,7 @@ This plugin also provides a Language Selection menu for the agents. Switching la
 Available Languages:
 * English
 * Spanish
-* Portugues
+* Portuguese
 * French
 * German
 * Dutch
