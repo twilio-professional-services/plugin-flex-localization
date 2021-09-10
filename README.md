@@ -6,22 +6,21 @@
 
 Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
 
-This plugin replaces all string prompts in the Flex UI with translations, localizing the UI to each logged-in user.  You must retrieve the base set of strings, make copies for every language to be used, and have the copies translated.
-
-This plugin also provides a Language Selection menu for the agents. Switching language reloads the appropriate language file and updates all the Flex Manager Template Strings
-
-![French](images/frenchUI.png)
+This plugin replaces all string prompts in the Flex UI with translations, localizing the UI to each logged-in user. This plugin also provides a Language Selection menu for the agents. Switching language reloads the appropriate language file and updates all the Flex Manager Template Strings
 
 ![Spanish](images/agentSpanish.png)
+
+![Japanese](images/agentJapanese2tasks.png)
 
 Available Languages:
 * English
 * Spanish
-* Portugues
+* Portuguese
 * French
 * German
 * Dutch
 * Czech
+* Japanese
 
 The included assets contain the translated template strings for each Language. Each file contains the exact same set of String Identifiers since this is required for seamless Language switching.
 
@@ -56,7 +55,7 @@ twilio plugins:install @twilio-labs/plugin-flex
 twilio plugins:install @twilio-labs/plugin-serverless
 ```
 
-## Development
+## Adding additional languages 
 
 Run `twilio flex:plugins --help` and `twilio serverless --help` to see all the commands we currently support. For further details on CLI Plugins refer to our documentation on the [Twilio CLI Plugins Docs](https://www.twilio.com/docs/twilio-cli/plugins) page.
 
@@ -68,11 +67,11 @@ copy(Twilio.Flex.Manager.getInstance().strings)
 
 Open the en-US.private.json file in the default/assets directory, remove all existing lines and paste in the contents of the clipboard.  Save and close the file.
 
-Make a copy the en-US.private.json file for every language to be used - samples for es-MX.private.json and fr-CA.private.json show the naming convention: {ISO Language and Country Code}.private.json
+Make a copy of en-US.private.json file for every language to be used - samples for es-MX.private.json and fr-CA.private.json show the naming convention: {ISO Language and Country Code}.private.json
 
-Have all of the new copies of the JSON file translated.
+Translate all entries in the JSON file for the new language.
 
-Alternatively, leverage the Excel worksheet provided to create language Json files. See worksheet for details and instructions.
+Alternatively, leverage the spreadsheet provided to create new language assets. See worksheet for details and instructions.
 
 In the `default` directory, deploy the Serverless Function and Assets.
 
