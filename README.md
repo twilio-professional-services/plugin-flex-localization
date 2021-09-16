@@ -103,3 +103,11 @@ Close all browsers with Flex running, and open a new browser window to start Fle
 For further reference see [Flex Localization and Templating](https://www.twilio.com/docs/flex/developer/ui/localization-and-templating)
 
 If necessary, run `npm install twilo-flex-token-validator` for dependencies in both base project directory and the `default` directory!
+
+## License
+
+[MIT](http://www.opensource.org/licenses/mit-license.html)
+
+## Disclaimer
+
+No warranty expressed or implied. Software is as is.
