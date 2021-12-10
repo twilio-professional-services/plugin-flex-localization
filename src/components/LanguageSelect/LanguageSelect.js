@@ -51,12 +51,20 @@ class LanguageSelect extends React.PureComponent {
   }
   
 
+  updateWorker = async (language) => {
+    const newAttr = { ...manager.workerClient.attributes, language};
+    console.log('Updated worker attributes: ', newAttr )
+    await manager.workerClient.setAttributes(newAttr);
+  }
+
   handleChange = async (e) => {
     console.log('Selected language: ', e.target.value );
     let data = await LanguageUtil.getLanguageStrings(e.target.value);
     if (data) { 
       manager.strings = { ...manager.strings, ...data};    
       this.props.setLanguage(e.target.value);
+      //Update worker
+      this.updateWorker(e.target.value);
     }
   }
 
