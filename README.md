@@ -21,6 +21,7 @@ Available Languages:
 * Dutch
 * Czech
 * Japanese
+* Chinese (Simplified)
 
 The included assets contain the translated template strings for each Language. Each file contains the exact same set of String Identifiers since this is required for seamless Language switching.
 

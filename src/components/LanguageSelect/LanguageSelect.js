@@ -44,6 +44,10 @@ class LanguageSelect extends React.PureComponent {
         {
           'name': 'Japanese',
           'key': 'ja-JP'
+        },
+        {
+          'name': 'Chinese (Simplified)',
+          'key': 'zh-CN'
         }
       ]
     }
