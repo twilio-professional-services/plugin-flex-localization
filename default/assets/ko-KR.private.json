@@ -20,7 +20,7 @@
   "FieldValidationRequiredField": "필수 입력 항목입니다",
   "FieldValidationInvalidEmail": "유효한 이메일 주소를 입력해 주세요",
   "ChatInputUserNotMemberDisabledText": "채팅에 초대받지 못했습니다.",
-  "FilterItemAny": "아무거나",
+  "FilterItemAny": "Any",
   "FilterItemAmountSelected": "{{amount}}가 선택되었습니다",
   "FilterItemOnly": "{{item.label}}만을",
   "NewChatMessageNotificationTitle": "{{lastMessage.authorName}}로부터 새로운 메시지가 도착하였습니다.",
