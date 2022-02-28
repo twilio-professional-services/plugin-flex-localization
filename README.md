@@ -17,6 +17,7 @@ Available Languages:
 * Spanish
 * Portuguese
 * French
+* Italian
 * German
 * Dutch
 * Czech
