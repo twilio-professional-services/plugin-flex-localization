@@ -24,6 +24,7 @@ Available Languages:
 * Japanese
 * Korean
 * Chinese (Simplified)
+* Chinese (Traditional)
 * Vietnamese
 
 The included assets contain the translated template strings for each Language. Each file contains the exact same set of String Identifiers since this is required for seamless Language switching.

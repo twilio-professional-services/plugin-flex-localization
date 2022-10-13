@@ -58,6 +58,10 @@ class LanguageSelect extends React.PureComponent {
           'key': 'zh-CN'
         },
         {
+          'name': 'Chinese (Traditional)',
+          'key': 'zh-TW'
+        },
+        {
           'name': 'Vietnamese',
           'key': 'vi-VN'
         }
