@@ -20,6 +20,6 @@ exports.handler = TokenValidator(function(context, event, callback) {
   response.appendHeader('Content-Type', 'application/json');
   response.setBody(JSON.parse(text));
 
-  callback(null, response);
+  return callback(null, response);
 });
 
