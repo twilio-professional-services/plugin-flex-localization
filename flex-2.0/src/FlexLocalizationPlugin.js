@@ -4,8 +4,7 @@ import { FlexPlugin } from '@twilio/flex-plugin';
 import reducers, { namespace } from './states';
 
 import LanguageSelect from './components/LanguageSelect/LanguageSelect';
-const PLUGIN_NAME = 'FlexLocalizationPlugin';
-
+import { PLUGIN_NAME } from './utils/constants';
 import { Actions as LanguageActions } from './states/LanguageState';
 import LanguageUtil from './utils/LanguageUtil';
 
@@ -48,8 +47,11 @@ export default class FlexLocalizationPlugin extends FlexPlugin {
     myLanguage = manager.configuration.language || myLanguage;
 
     // Or manager.workerClient.attributes data.  This is preferred, as it can be setup via SSO.
-    myLanguage = manager.workerClient.attributes.language || myLanguage;
-
+    let workerLanguage = manager.workerClient.attributes.language 
+    console.log(PLUGIN_NAME, 'worker language:', workerLanguage);
+    
+    myLanguage = workerLanguage || myLanguage;
+    
     let data = await LanguageUtil.getLanguageStrings(myLanguage);
     if (data) {
       manager.strings = { ...manager.strings, ...data };
