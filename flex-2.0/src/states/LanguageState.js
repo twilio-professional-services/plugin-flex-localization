@@ -1,5 +1,5 @@
 import { PLUGIN_NAME } from "../utils/constants";
-const ACTION_SET_LANGUAGE = 'SET_LANGUAGE';
+export const ACTION_SET_LANGUAGE = 'SET_LANGUAGE';
 
 const initialState = {};
 
